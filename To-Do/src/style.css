@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-size:24px;
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:linear-gradient(130deg,#3e3e3e,#000);
+}
+
+.main{
+  width:50vw;
+  background:rgb(179,179,179);
+  padding:20px;
+  border-radius:10px;
+}
+
+.todo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.todo h1{
+  margin-bottom:20px;
+}
+
+/* INPUT */
+
+.input_con{
+  width:60%;
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.input{
+  flex:1;
+  padding:8px;
+  border:none;
+  outline:none;
+  border-radius:5px;
+}
+
+.btn{
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* LIST */
+
+.list_con{
+  width:100%;
+  padding:5px 60px;
+}
+
+.list_con li{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+.list_con li:hover{
+  background:rgba(0,0,0,0.1);
+}
+
+/* ICON */
+
+.icon{
+  width:32px;
+  height:32px;
+  pointer-events:none;
+  content:url("../icon/radio.png");
+}
+
+/* CHECKED */
+
+.checked span{
+  text-decoration:line-through;
+  color:rgb(90,90,90);
+}
+
+.checked .icon{
+  content:url("../icon/accept.png");
+}
